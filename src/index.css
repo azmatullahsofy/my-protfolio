@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-neon-green: #00FF7F;
+  --color-neon-green-dim: rgba(0, 255, 127, 0.15);
+}
+
+/* Custom glowing effects and grid background styles for our creative dark coding theme */
+@layer utilities {
+  .bg-grid-pattern {
+    background-size: 40px 40px;
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  }
+  
+  .glow-neon {
+    box-shadow: 0 0 15px rgba(0, 255, 127, 0.25);
+  }
+
+  .glow-cyan {
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.2);
+  }
+
+  .glow-emerald {
+    box-shadow: 0 0 15px rgba(0, 255, 127, 0.2);
+  }
+
+  .glow-violet {
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.2);
+  }
+
+  .text-stroke-white {
+    -webkit-text-stroke: 1.5px white;
+    color: transparent;
+  }
+  
+  .text-stroke-green {
+    -webkit-text-stroke: 1px #00FF7F;
+    color: transparent;
+  }
+
+  .timeline-line {
+    background: linear-gradient(to bottom, #00FF7F 0%, #06b6d4 50%, #8b5cf6 100%);
+  }
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00FF7F;
+}

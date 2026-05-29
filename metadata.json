@@ -1,0 +1,8 @@
+{
+  "name": "Md Azmatullah - Portfolio & Creative Coder Hub",
+  "description": "Interactive portfolio and student workspace for Md Azmatullah, BCA student, creative web developer and coder, featuring custom widgets like QuoteVerse, StudentHub, and an interactive GitHub Snake.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
